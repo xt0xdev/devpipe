@@ -5,7 +5,6 @@ Example package showing the contract shape for a domain module.
 
 ## Public API
 - `createThing(input: CreateThingInput): Promise<Thing>`
-- `getThing(id: string): Promise<Thing | null>`
 
 ## May depend on
 - `@scope/db`
