@@ -1,0 +1,24 @@
+{
+  "name": "devpipe",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Contracts-first multi-agent development pipeline",
+  "scripts": {
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "test:contracts": "vitest run tests/contracts",
+    "test:smoke": "vitest run tests/smoke",
+    "dev": "turbo run dev --filter=web"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^2.3.0",
+    "turbo": "^2.3.0",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=22"
+  }
+}
